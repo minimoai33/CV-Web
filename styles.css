@@ -1,0 +1,521 @@
+/* =========================
+   RESET Y BASE
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0F172A;
+    color: #F8FAFC;
+    line-height: 1.6;
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #F8FAFC;
+}
+
+/* =========================
+   BOTONES
+========================= */
+
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #06B6D4;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0891B2;
+}
+
+.btn-linkedin {
+    margin-top: 5%;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #020617;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #06B6D4;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #06B6D4;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    padding: 80px 10%;
+    background:
+    linear-gradient(
+        135deg,
+        #0F172A 0%,
+        #1E293B 60%,
+        #0EA5E9 140%
+    );
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+}
+
+.hero-text h2 {
+    color: #06B6D4;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    max-width: 500px;
+    margin-bottom: 20px;
+    color: #CBD5E1;
+}
+
+.hero-image img {
+    width: 250px;
+    border-radius: 10px;
+    border: 3px solid #06B6D4;
+    box-shadow: 0 0 30px rgba(6,182,212,0.35);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* =========================
+   PRESENTACIÓN
+========================= */
+
+.sobre-mi {
+    padding: 80px 10%;
+    background-color: #111827;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.about-box {
+    background: #1E293B;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    color: #F8FAFC;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.about-box h3 {
+    color: #06B6D4;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   CV + LINKEDIN
+========================= */
+
+.cv-section {
+    padding: 80px 10%;
+}
+
+.cv-description {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #CBD5E1;
+}
+
+.cv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.cv-card {
+    background: #1E293B;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.cv-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(6,182,212,0.25);
+}
+
+.cv-card h3 {
+    margin-bottom: 10px;
+    color: #06B6D4;
+}
+
+.cv-image {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 8px;
+    margin: 15px 0 20px 0;
+    display: block;
+}
+
+.cv-text {
+    margin: 15px 0;
+    color: #CBD5E1;
+    line-height: 1.5;
+}
+
+/* LinkedIn badge */
+
+.linkedin-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    min-height: 320px;
+}
+
+.linkedin-badge .LI-profile-badge {
+    margin-top: 7%;
+    margin-left: 23%;
+    transform: scale(1.15);
+    transform-origin: center;
+}
+
+/* =========================
+   BLOG
+========================= */
+
+.blog-section {
+    padding: 80px 10%;
+    background-color: #111827;
+}
+
+.blog-description {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+    color: #CBD5E1;
+}
+
+.blog-post {
+    max-width: 850px;
+    margin: 0 auto;
+    background: #1E293B;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.blog-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #06B6D4;
+}
+
+.blog-intro {
+    margin-bottom: 20px;
+    color: #CBD5E1;
+}
+
+.blog-post h4 {
+    margin-top: 20px;
+    color: #06B6D4;
+}
+
+.blog-post p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: #CBD5E1;
+}
+
+.blog-source {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    color: #94A3B8;
+}
+
+.paper-reference {
+    margin-top: 15px;
+    color: #94A3B8;
+}
+
+.paper-reference a {
+    color: #38BDF8;
+    text-decoration: none;
+}
+
+.paper-reference a:hover {
+    color: #7DD3FC;
+    text-decoration: underline;
+}
+
+/* =========================
+   PRESENTACIÓN PROFESIONAL
+========================= */
+
+.video-section{
+    padding:80px 10%;
+}
+
+.video-layout{
+    display:flex;
+    align-items:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.video-info{
+    flex:1;
+    min-width:300px;
+}
+
+.video-info h3{
+    color:#06B6D4;
+    margin-bottom:15px;
+}
+
+.video-info p{
+    color:#CBD5E1;
+    margin-bottom:15px;
+}
+
+.video-info ul{
+    margin:20px 0;
+    padding-left:20px;
+}
+
+.video-info li{
+    margin-bottom:10px;
+    color:#CBD5E1;
+}
+
+.video-wrapper{
+    flex:1;
+    min-width:300px;
+    display:flex;
+    justify-content:center;
+}
+
+.video-wrapper video{
+    width:100%;
+    max-width:500px;
+    border-radius:12px;
+    border:1px solid #334155;
+}
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contact-section {
+    padding: 80px 10%;
+    background-color: #020617;
+    color: white;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    color: white;
+    text-decoration: none;
+    background: #1E293B;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid #334155;
+}
+
+.contact-card:hover {
+    background: #06B6D4;
+}
+
+/* =========================
+   SKILLS
+========================= */
+.skills-section {
+    padding: 80px 10%;
+    background-color: #0F172A;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background: #1E293B;
+    border: 1px solid #334155;
+    color: #06B6D4;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+/* =========================
+   Proyecto
+========================= */
+.ia-section {
+    padding: 80px 10%;
+    background-color: #111827;
+}
+
+.ia-description {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    color: #CBD5E1;
+}
+
+.ia-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+}
+
+.ia-card {
+    background: #1E293B;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+}
+/* =========================
+   Proyectos CV
+========================= */
+.project-list {
+    margin-top: 30px;
+    display: grid;
+    gap: 20px;
+}
+
+.project-card {
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+}
+
+.project-card h4 {
+    color: #06B6D4;
+    margin-bottom: 10px;
+}
+
+.project-card ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/* Footer */
+
+.footer{
+    text-align:center;
+    padding:30px;
+    background:#020617;
+    color:#94A3B8;
+}
+
+
+.section-cta{
+    text-align:center;
+    margin-top:40px;
+}
+
+/*Botones Blog*/
+
+.blog-actions{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:20px;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.btn-contacto{
+    background-color:#2563EB;
+}
+
+.btn-contacto:hover{
+    background-color:#1D4ED8;
+}
