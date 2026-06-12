@@ -259,11 +259,24 @@ body {
     background-color: #111827;
 }
 
-.blog-description {
-    max-width: 800px;
-    margin: 0 auto 40px;
-    text-align: center;
+.blog-intro-block {
+    max-width: 850px;
+    margin: 0 auto 40px auto;
+    padding: 25px 30px;
+    background: #1E293B;
+    border: 1px solid #334155;
+    border-radius: 12px;
+}
+
+.blog-intro-block p {
     color: #CBD5E1;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.blog-intro-block p:last-child {
+    margin-bottom: 0;
 }
 
 .blog-post {
@@ -512,10 +525,254 @@ body {
     gap:15px;
 }
 
-.btn-contacto{
-    background-color:#2563EB;
+
+.video-wrapper iframe{
+    width:100%;
+    max-width:500px;
+    height:280px;
+    border-radius:12px;
+    border:1px solid #334155;
 }
 
-.btn-contacto:hover{
-    background-color:#1D4ED8;
+/*Subtitle*/
+/* Layout de columnas */
+.skills-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
 }
+
+/* Bloques izquierda/derecha */
+.skills-block {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+/* Títulos Técnicas / Blandas */
+.skills-subtitle {
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+}
+
+/* Colores diferenciados */
+.skills-subtitle.tech {
+    color: #38BDF8; /* azul técnico */
+}
+
+.skills-subtitle.soft {
+    color: #38BDF8; /* morado soft skills */
+}
+
+/* Grid de skills */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Chips de habilidades */
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 20px;
+    background: #1E293B;
+    border: 1px solid #334155;
+    transition: 0.3s;
+}
+
+.skill span {
+    color: #E2E8F0;
+}
+
+/* Iconos */
+.skill i {
+    color: #06B6D4;
+}
+
+/* Hover efecto pro */
+.skill:hover {
+    transform: translateY(-3px);
+    border-color: #06B6D4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* =========================
+   FORMACIÓN ACADÉMICA
+========================= */
+
+.education-section {
+    padding: 80px 10%;
+    background-color: #111827;
+}
+
+.education-card {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #1E293B;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    transition: 0.3s;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(6,182,212,0.20);
+}
+
+.education-icon {
+    font-size: 3rem;
+    color: #06B6D4;
+}
+
+.education-content h3 {
+    color: #F8FAFC;
+    margin-bottom: 8px;
+}
+
+.education-university {
+    color: #38BDF8;
+    font-weight: 600;
+}
+
+.education-date {
+    color: #94A3B8;
+    margin: 8px 0;
+}
+
+.education-description {
+    color: #CBD5E1;
+    margin-top: 10px;
+}
+
+/*Proyectos*/
+
+.projects-section{
+    padding:80px 10%;
+    background:#111827;
+}
+
+.timeline{
+    position:relative;
+    max-width:900px;
+    margin:auto;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:20px;
+    top:0;
+    width:3px;
+    height:100%;
+    background:#06B6D4;
+}
+
+.timeline-item{
+    position:relative;
+    padding-left:70px;
+    margin-bottom:40px;
+}
+
+.timeline-dot{
+    position:absolute;
+    left:10px;
+    top:10px;
+
+    width:22px;
+    height:22px;
+
+    border-radius:50%;
+    background:#06B6D4;
+
+    border:4px solid #0F172A;
+}
+
+.timeline-content{
+    background:#1E293B;
+    border:1px solid #334155;
+    border-radius:12px;
+    padding:25px;
+    transition:.3s;
+}
+
+.timeline-content:hover{
+    transform:translateY(-4px);
+    box-shadow:0 0 20px rgba(6,182,212,.20);
+}
+
+.timeline-date{
+    color:#38BDF8;
+    font-weight:bold;
+    font-size:.9rem;
+}
+
+.timeline-content h3{
+    margin:10px 0;
+    color:#F8FAFC;
+}
+
+.timeline-content p{
+    color:#CBD5E1;
+}
+
+.timeline-content ul{
+    margin-top:15px;
+    padding-left:20px;
+}
+
+.timeline-content li{
+    color:#CBD5E1;
+    margin-bottom:8px;
+}
+
+.timeline-content h3 i{
+    color:#06B6D4;
+    margin-right:8px;
+}
+/* Cosas */
+
+.video-features{
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.video-features li{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    color: #CBD5E1;
+}
+
+.video-features i{
+    color: #06B6D4;
+    font-size: 1.1rem;
+    width: 20px;
+}
+.ia-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 500;
+    color: #4da3ff;
+    text-decoration: underline;
+}
+
+
